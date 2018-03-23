@@ -21,12 +21,14 @@ install:
 
   - ps: conda update -y six
   
+
+  - ps: pip --disable-pip-version-check install -r requirements.pip
   
-  - ps: conda install -y -q numpy
-  - ps: conda install -y -q netcdf4
-  - ps: conda install -y -q rtree
-  - ps: conda install -y -q fiona
-  - ps: conda install -y -q shapely
+    #- ps: conda install -y -q numpy
+    #- ps: conda install -y -q netcdf4
+    #- ps: conda install -y -q rtree
+    #- ps: conda install -y -q fiona
+    #- ps: conda install -y -q shapely
     #- ps: conda install -y -q -c ioos netcdf4
     #- ps: conda install -y -q -c cjrh numpy
     #- ps: conda install -y -q -c conda-forge rtree
