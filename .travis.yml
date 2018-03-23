@@ -51,7 +51,7 @@ before_install:
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo easy_install pip ; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then rm '/usr/local/include/c++' ; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew reinstall $(grep -v -E '(^#|^$)' requirements.brw) ; fi
-  #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="/usr/local/opt/python/libexec/bin:$PATH" ; fi
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export PATH="/usr/local/opt/python/libexec/bin:$PATH" ; fi
 
 #-------------------------------------------------------------------------------
 #General environment details
