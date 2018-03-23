@@ -21,7 +21,6 @@ install:
 
   - ps: conda update -y six
   
-
   - ps: pip --disable-pip-version-check install -r requirements.pip
   
     #- ps: conda install -y -q numpy
