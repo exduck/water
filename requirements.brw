@@ -23,7 +23,7 @@ pypy
 
 md5sha1sum
 
-hdf5@1.8
+hdf5
 netcdf
 
 wget
