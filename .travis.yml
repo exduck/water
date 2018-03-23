@@ -60,6 +60,8 @@ before_install:
 - echo $TRAVIS_OS_NAME
 - gcc --version
 - python --version
+- which python
+- whereis python
 - pip2 --version
 - which wget
 - whereis wget
