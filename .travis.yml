@@ -72,7 +72,7 @@ install:
 - cd $TRAVIS_BUILD_DIR
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo -H pip install $(grep numpy requirements.pip); fi
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo -H pip install -r requirements.pip; fi
-- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo -H pip install --ignore-installed -r requirements.pip; fi
+- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo -H pip install -r requirements.pip; fi
   #- if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sudo -H  HDF5_DIR=/usr/local/Cellar/hdf5@1.8/1.8.19 pip install --ignore-installed -r requirements.pip; fi
 
 
